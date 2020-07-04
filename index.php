@@ -1,3 +1,6 @@
+<?php  include 'app/multiplo.php';
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,11 +29,12 @@
                             </thead>
                                 <tbody>
                                 <?php
+                                $obj = new Multiplo();
                                 $i=1;
                                 while($i<=100) {
 
-                                    $mult3 = $i%3; // multiplo de 3
-                                    $mult5 = $i%5; // multiplo de 5
+                                    $mult3 = $obj->multiplo3($i);
+                                    $mult5 = $obj->multiplo5($i);
 
 
                                 Switch($i) {
