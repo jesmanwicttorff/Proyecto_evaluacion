@@ -38,7 +38,7 @@
 
 
                                 Switch($i) {
-                                    case $i%3 == 0 : ?>
+                                    case $mult3 == 0 : ?>
                                 <tr>
                                         <?php if($mult3 == 0 && $mult5 == 0) { ?>
 
@@ -47,7 +47,7 @@
                                         <?php } ?>
                                     <td><?php echo "Falabella"; break;?></td>
 
-                                    <?php case $i%5 == 0 : ?>
+                                    <?php case $mult5 == 0 : ?>
 
                                     <td><?php echo "Eso"; break;?></td>
 
